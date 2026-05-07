@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcoVision Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="login-container">
+    <h1>🌿 EcoVision</h1>
+    <p>Login to Explore Environmental Awareness</p>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+</div>
+
+<script>
+function login() {
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    if(user !== "" && pass !== "") {
+        window.location.href = "index.html";
+    } else {
+        alert("Please enter Username and Password");
+    }
+}
+</script>
+
+</body>
+</html>
